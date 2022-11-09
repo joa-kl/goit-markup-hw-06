@@ -632,6 +632,12 @@ h3 {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
+    scale: 1;
+    opacity: 1;
+    visibility: visible;
+    transition-property: scale, opacity, visibility;
+    transition-duration: 250ms;
+    transition-timing-function: ease;
 }
 
 .modal {
@@ -643,7 +649,7 @@ h3 {
     min-height: 581px;
     background-color: #fff;
     border-radius: 4px;
-    display: block;
+    display: block;   
 }
 
 .close-btn {
@@ -888,7 +894,7 @@ footer input {
     border: 2px solid var(--black);
     background-color: #fff;
     margin-left: 15px;
-
+    border-radius: 2px;
     top: 1px;
     
 }
@@ -901,6 +907,7 @@ footer input {
     width: 16px;  
     position:absolute; 
     top: 1px;
+    border-radius: 2px;
 }
 
 .container-check input:checked~.checkmark {
@@ -912,5 +919,5 @@ footer input {
 }
 
 .policy-align {
-  margin-left: 20px; 
+  margin-left: 22px; 
 }
