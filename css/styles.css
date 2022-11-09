@@ -840,6 +840,7 @@ footer input {
     outline: 0;
     font-size: 12px;
     width: 100%;
+    color: var(--light-gray);
 }
 
 .fieldset-feedback {
@@ -854,21 +855,21 @@ footer input {
     margin-bottom: 20px;
 }
 
-.fieldset-feedback:has(input:focus) {
+.fieldset-feedback:has(.input:focus) {
     border-color: var(--brand-color);
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .container-check {
-    display: block;
+    /* display: block; */
     position: relative;
     padding-left: 17px;
     margin-bottom: 4px;
-    align-content: center;
     cursor: pointer;
     font-size: 14px;
     letter-spacing: 0.03em;
-    color: var(--light-gray)
+    color: var(--light-gray);
+    align-content: center;
 }
 
 .container-check input {
@@ -881,22 +882,25 @@ footer input {
 
 .checkmark {
     position: absolute;
-    left: 0;
+    left: 2px;
     height: 15px;
     width: 16px;
     border: 2px solid var(--black);
     background-color: #fff;
     margin-left: 15px;
+
     top: 1px;
+    
 }
 
 .checkmark-icon {
-    fill: var(--brand-color);
+    background-color: var(--brand-color);
     opacity: 0;
-    top: 10px;
-    left: 0;
+    left: 17px;
     height: 15px;
-    width: 16px;
+    width: 16px;  
+    position:absolute; 
+    top: 1px;
 }
 
 .container-check input:checked~.checkmark {
@@ -905,4 +909,8 @@ footer input {
 
 .container-check input:checked~.checkmark-icon {
   opacity: 1;
+}
+
+.policy-align {
+  margin-left: 20px; 
 }
