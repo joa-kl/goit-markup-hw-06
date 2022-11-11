@@ -720,6 +720,7 @@ h3 {
     padding-left: 42px;
     text-align: left;
     margin-top: 20px;
+    cursor: pointer;
 }
 
 .icon-send {
@@ -922,6 +923,3 @@ footer input {
   margin-left: 22px; 
 }
 
-.my-form button {
-    cursor: pointer;
-}
