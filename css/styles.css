@@ -921,3 +921,7 @@ footer input {
 .policy-align {
   margin-left: 22px; 
 }
+
+.my-form button {
+    cursor: pointer;
+}
